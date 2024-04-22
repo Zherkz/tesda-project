@@ -28,10 +28,14 @@ nav {
     left: 0;
     z-index: 10;
     width: 100%;
-    height: 100px;
-    padding: 20px 0;
+    height: 105px;
+    padding: 10px 0;
+    background: #10110eb2;
+ 
    
 }
+
+
 .logo {
     height: 70px;
     margin-top: 10px;
@@ -41,7 +45,6 @@ nav {
     align-items: center;
     justify-content: center;
     list-style: none;
-
     
     
 }
@@ -51,7 +54,7 @@ nav {
     font-size: 18px;
     font-weight: 600;
     text-decoration: none;
-    color: var(--mcolor3);
+    color: var(--mcolor4);
     transition: 500ms ease;
     margin: 0 25px;
 
@@ -72,7 +75,7 @@ position: relative;
     display: block;
     font-size: 17px;
     padding: 15px 25px;
-    background-color: var(--mcolor1);
+    background-color: #04256bbe;
 }
 
 .dropdown li a:hover  {
@@ -308,20 +311,8 @@ display: inline;
 }
 
 
-@media( max-width:900px){
 
-    .links-container {
-        flex-direction: column;
-    }
-
-    ul li ul.dropdown {
- text-align: center;
-    left: 25px;
-    }
-
-
-}
-@media( max-width:1100px){
+@media( max-width:1280px){
     /* FOOTER */
     .footer-row {
         flex-direction: column;
@@ -332,4 +323,53 @@ display: inline;
         text-align: center;
         margin: 0 0 1rem 0;
     }
+
+    .stylernaline {
+        width: 85%;
+    }
+    .maydiamondsaloob img {
+        width: 30px;
+    }
+}
+
+@media( max-width:1024px){
+
+    .links-container {
+       margin: 25px 0;
+      
+    }
+   
+       ul li ul.dropdown {
+    text-align: center;
+       left: 25px;
+       }
+   
+       .logo{ 
+           display: none;
+       }
+   }
+   
+@media (max-width:768px) {
+
+    .links-container {
+        flex-direction: column;
+        margin: 0px 0 ;
+    
+    }
+    .links-container a {
+        font-size: 17px;
+    }
+   
+    nav {
+        height: 115px;
+    }
+
+}
+
+
+
+.fb-page {
+    margin: 12rem 2rem 0 0;
+ display: flex;
+ justify-content: right;
 }
